@@ -84,7 +84,6 @@ const Input = ({
   RightIcon,
   errorMessage,
   style,
-  onFocus,
   onBlur,
   onSubmitEditing,
   noteMessage,
