@@ -1,7 +1,4 @@
 import { StyleSheet, View } from 'react-native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { AuthStackParamList } from '../../navigation/AuthStackNavigator';
-import { ScreenNames } from '../../navigation/screenNames';
 import Button from '../../components/Button';
 import Text from '../../components/Text';
 import Input from '../../components/Input';

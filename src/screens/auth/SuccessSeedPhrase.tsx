@@ -1,10 +1,7 @@
 import { Image, StyleSheet, View } from 'react-native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Keyring } from '@polkadot/keyring';
 import { useAppDispatch } from '../../store';
 import { selectMnemonic, setKeyring, setPair } from '../../store/auth';
-import { AuthStackParamList } from '../../navigation/AuthStackNavigator';
-import { ScreenNames } from '../../navigation/screenNames';
 import Button from '../../components/Button';
 import Text from '../../components/Text';
 import { colors } from '../../theme/colors';

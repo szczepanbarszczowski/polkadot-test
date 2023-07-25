@@ -92,19 +92,12 @@ const Input = ({
   numberOfLines,
 }: InputProps) => {
   const [isTextHidden, changeTextHiddenFlag] = useState(true);
-  const [isFocused, changeFocusedState] = useState(false);
 
   const toggleTextHiddenFlag = useCallback(() => {
     changeTextHiddenFlag(!isTextHidden);
   }, [isTextHidden]);
 
-  const handleFocus = useCallback(() => {
-    changeFocusedState(true);
-    onFocus && onFocus();
-  }, [onFocus]);
-
   const handleBlur = useCallback(() => {
-    changeFocusedState(false);
     onBlur && onBlur();
   }, [onBlur]);
 
@@ -125,9 +118,7 @@ const Input = ({
           onChangeText={(text) => onChange?.(text)}
           value={value}
           editable={!disabled}
-          onFocus={handleFocus}
           onBlur={handleBlur}
-          // autoCapitalize="none"
           placeholderTextColor={colors.gray12}
           underlineColorAndroid="transparent"
           onSubmitEditing={onSubmitEditing}
